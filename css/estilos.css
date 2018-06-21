@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -76,7 +78,7 @@ header nav ul{
 	list-style: none;
 }
 
-ul li{
+header nav ul li{
 	float: left;
 	margin: 5px;
 	
@@ -142,7 +144,7 @@ img#logo{
 }
 
 .texto-servicios{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 /* IMAGEN PARA EFECTO PARALLAX */
@@ -286,8 +288,86 @@ figure .trasera-tarjeta p{
 	font-size: 15px;
 }
 
-/* SEPARADOR CON IMGANE Y HORARIOS*/
+/* SEPARADOR CON IMG Y HORARIOS*/
 .img-para-nosotros{
 	background-image: url(../img/nos/img-2.jpg);
 	height: 500px;
 }
+
+/* GALERIA INSTALACIONES */
+#container{
+	margin: 0 auto;
+}
+.demo li{
+	list-style-type: none;
+	display: inline-block; 
+}
+.demo li img{
+	height: 200px;
+	border: 5px solid #999;
+	margin: 5px;
+}
+
+/* GOOGLE MAPS*/
+#map{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	height: 500px;
+	width: 100%;
+}
+
+/*-------------- UBICACIÓN -----------------*/
+
+/*BOTONES*/
+.boton1{
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: sans-serif;
+	transition: .5s;
+	font-size: 30px;
+	overflow: hidden;
+}
+.boton1:hover{
+	color: #3A5795;
+}
+.boton1:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #3A5795;
+	z-index: -1;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+.boton1:hover:before{
+	top: calc(100% - 2px);
+}
+.boton1:after{
+	content: '';
+	position: absolute;
+	top: calc(-100% + 2px);
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: #3A5795;
+	z-index: -1;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+.boton1:hover:after{
+	left: 0;
+	transition-delay: 0.5s;
+}
+

@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 		if(scroll > 150){
 			if(!flag2){
-				$("header").css({"position": "fixed", "top": "0", "height": "100px", "z-index": "100"});
+				$("header").css({"position": "fixed", "top": "0", "height": "100px", "z-index": "1000"});
 				$("#logo").css({"margin-top": "-5px", "width": "80px", "height": "80px"});
 				$("header").css({"background-color": "#f8f8f8"});
 				$("nav").css({"margin-left": "9%"});
