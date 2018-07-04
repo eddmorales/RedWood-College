@@ -11,7 +11,13 @@ body{
 	padding: 0;
 	font-family: sans-serif;
 }
+.color-gris{
+	color: #6A737D;
+}
 
+.color-principal{
+	color: #0561A7;
+}
 /* MENU DE REDES SOCIALES*/
 
 .redes-inicio{
@@ -51,10 +57,7 @@ body{
 }
 
 /* LOGO */
-.logo-escuela{
-	height: 400px;
-	width: auto;
-}
+
 
 /* MENU DE NAVEGACION */
 header{
@@ -69,7 +72,7 @@ nav{
 	margin: auto;
 	margin-top: 15px;
 	height: 40px;
-	margin-left: 4%;
+	margin-left: 10px;
 	-webkit-transition: margin-left .5s;
 }
 
@@ -80,7 +83,7 @@ header nav ul{
 
 header nav ul li{
 	float: left;
-	margin: 5px;
+	margin: 4px;
 	
 }
 
@@ -94,7 +97,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-	background-color: #3A5795;
+	background-color: #0561A7;
 	color: #fff;
 	transition: .9s;
 	text-decoration: none;
@@ -109,6 +112,14 @@ header nav ul li a:hover{
 img#logo{
 	float: left;
 	display: block;
+	width: 400px;
+	height: 400px;
+	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+/*
+img#logo{
+	float: left;
+	display: block;
 	margin-left: 25px;
 	margin-right: 25px;
 	width: 230px;
@@ -116,7 +127,7 @@ img#logo{
 	margin-top: 50px;
 	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
 }
-
+*/
 /* PARTE DE SERVICIOS*/
 .icons-servicios{
 	background: #5FD4F7;
@@ -140,7 +151,22 @@ img#logo{
 
 .titulos-servicios{
 	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
+	color: #5FD4F7;
+	padding: 7px 10px;
+	border-radius: 25px;
+	border: 1px solid;
+}
+
+.titulos-servicios:hover{
+	background: #5FD4F7;
+	color: #fff;
+	border-radius: 25px;
+	transition: 0.8s;
+}
+.icons-servicios:hover{
+	background: #fff;
+	color: #5FD4F7;
+	transition: 0.8s;
 }
 
 .texto-servicios{
@@ -176,15 +202,15 @@ img#logo{
 }
 
 .titulos-talleres{
-	font-size: 30px;
+	font-size: 26px;
 	margin-bottom: 30px;
 	font-family: 'Roboto', sans-serif;
+	color: #3A5795;
 }
 
 .texto-talleres{
-	color: #A0A0A0;
-	margin-bottom: 50px;
-	font-family: 'Roboto', sans-serif;
+	margin-bottom: 70px;
+	font-family: 'Roboto Slab', sans-serif;
 }
 
 /* FOOTER */
@@ -337,7 +363,7 @@ figure .trasera-tarjeta p{
 	overflow: hidden;
 }
 .boton1:hover{
-	color: #3A5795;
+	color: #0561A7;
 }
 .boton1:before{
 	content: '';
@@ -346,7 +372,7 @@ figure .trasera-tarjeta p{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #3A5795;
+	background: #0561A7;
 	z-index: -1;
 	transition: 0.5s;
 	box-sizing: border-box;
@@ -361,7 +387,7 @@ figure .trasera-tarjeta p{
 	left: 100%;
 	width: 100%;
 	height: 100%;
-	background: #3A5795;
+	background: #0561A7;
 	z-index: -1;
 	transition: 0.5s;
 	box-sizing: border-box;
@@ -371,3 +397,85 @@ figure .trasera-tarjeta p{
 	transition-delay: 0.5s;
 }
 
+.menu-responsivo{
+	display: none;
+}
+
+/*-----------------MEDIA QUERIES-----------------*/
+@media screen and (max-width: 800px){
+	.redes-inicio{
+		display: none;
+	}
+
+	img#logo{
+		display: none;
+	}
+
+	.menu-responsivo{
+	top: 0;
+	position: fixed;
+	display: block;
+	width: 100%;
+	background: #ccc;
+	box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.63);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.63);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.63);
+	z-index: 1000;
+	}
+
+	#logo-responsivo{
+	position: relative;
+	width: 100px;
+	height: auto;
+	left: 20px;
+	}
+
+	button.hamburger{
+	position: absolute;
+	top: 20%;
+	left: 85%;
+	display: block;
+	color: #ccc;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+	}
+
+	  nav{
+	  	top: 100px;
+        width: 60%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+        background: #ccc;
+        z-index: 1000;
+    }
+
+    header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+}
+
+@media (min-width: 1024px){
+	img#logo{
+		width: 200px;
+		height: auto;
+	}
+	header nav ul li a{
+		font-size: 18px;
+	}
+}
+
+/*
+header nav ul li a{
+	color: #AAAAAA;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	padding: 7px 10px;
+}
+*/

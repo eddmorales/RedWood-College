@@ -2,13 +2,18 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>INICIO | RedWood College</title>
+	<title>INICIO - RedWood College</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
 </head>
 <body>
 <!-- REDES PARTE SUPERIOR -->
@@ -23,19 +28,32 @@
 			</div>
 		</div>
 	</div>
+
+<!--MENU RESPONSIVOS-->
+	<div class="menu-responsivo">
+		<div>
+			<a href="index.html"><img id="logo-responsivo" class="img-fluid" src="img/logo.png" alt="LOGO"></a>
+			<button class="hamburger hamburger--spin-r" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>  
+		</div>
+	</div>
+
 <!-- MENU DE NAVEGACION -->
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#">nosotros</a></li>
-				<li><a href="#">instalaciones</a></li>
-				<li><a href="#">ubicación</a></li>
+				<li><a class="menu" href="nosotros.html">nosotros</a></li>
+				<li><a class="menu" href="instalaciones.html">instalaciones</a></li>
+				<li><a class="menu" href="ubicacion.html">ubicación</a></li>
 			</ul>
-			<a href="#"><img id="logo" src="img/buap.png" alt="Logo RedWood College"></a>
+			<a href="index.html"><img class="img-fluid" id="logo" src="img/logo.png" alt="Logo RedWood College"></a>
 			<ul>
-				<li><a href="#">sistema</a></li>
-				<li><a href="#">comunidad</a></li>
-				<li><a href="#">contacto</a></li>
+				<li><a class="menu" href="sistema.html">sistema</a></li>
+				<li><a class="menu" href="comunidad.html">comunidad</a></li>
+				<li><a class="menu" href="contacto.html">contacto</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -71,7 +89,7 @@
 <!-- Botón de admisiones -->
 	<div class="row justify-content-center" style="background: #f5f5f5; margin: 0">
 		<div class="col-12" style="margin-bottom: 200px; margin-top: 200px">
-			<a href="#" class="boton1"><span class="boton-decorado">Admisiones</span></a>
+			<a href="admisiones.html" class="boton1"><span class="boton-decorado">Admisiones</span></a>
 		</div>
 	</div>
 
@@ -79,44 +97,44 @@
 	<div class="container-fluid" style="padding: 0">
 		<div class="row justify-content-center" style="margin: 0">
 			<div class="col-8">
-				<h1 class="text-center" style="margin-top: 50px; margin-bottom: 50px; font-family: 'Roboto'"><strong>BIENVENIDOS</strong></h1>
-				<p style="font-size: 18px; margin-bottom: 40px; font-family: 'Inconsolata', monospace;"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat illum corrupti, assumenda fuga libero adipisci sunt, quo quae unde neque omnis accusantium. Officiis ut, corporis sit maiores explicabo quo.</span><span>Voluptates, in! Voluptates error quod officia doloremque tempora? Nam distinctio quaerat in velit debitis illo exercitationem sapiente dolorum a eum. Praesentium debitis sint provident saepe a explicabo, blanditiis perferendis ipsa.</span></p>
+				<h1 class="text-center" style="margin-top: 70px; margin-bottom: 50px; font-family: 'Roboto'; color: #0561A7;"><strong>BIENVENIDOS</strong></h1>
+				<p style="font-size: 18px; margin-bottom: 60px; font-family: 'Roboto Slab', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat illum corrupti, assumenda fuga libero adipisci sunt, quo quae unde neque omnis accusantium. Officiis ut, corporis sit maiores explicabo quo.Voluptates, in! Voluptates error quod officia doloremque tempora? Nam distinctio quaerat in velit debitis illo exercitationem sapiente dolorum a eum. Praesentium debitis sint provident saepe a explicabo, blanditiis perferendis ipsa.</p>
 			</div>
 		</div>
 
 <!-- PARTE DE SERVICIOS -->
-		<div class="row justify-content-center" style="margin: 0">
+		<div class="row justify-content-between" style="margin: 0">
 			<div class="col-12 col-lg-4 text-center" style="margin-bottom: 50px; margin-top: 40px">
 				<img src="img/img1.jpg" alt="">
 			</div>
 			<div class="col-12 col-lg-6" style=" margin-top: 40px">
 				<div class="row">
 					<div class="col-12 col-md-6">					
-						<h4 class="titulo-servicios"><i class="fas fa-wrench icons-servicios"></i> Talleres</h4>
+						<h4 class="titulos-servicios"><i class="fas fa-palette icons-servicios"></i> Talleres</h4>
 						<p class="texto-servicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sit laboriosam iure, voluptates praesentium,</p>
 					</div>
 					<div class="col-12 col-md-6">						
-						<h4 class="titulo-servicios"><i class="fas fa-coffee icons-servicios"></i> Cafetería</h4>
+						<h4 class="titulos-servicios"><i class="fas fa-coffee icons-servicios"></i> Cafetería</h4>
 						<p class="texto-servicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eum non voluptates, consequuntur nam.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12 col-md-6">					
-						<h4 class="titulo-servicios"><i class="fas fa-book icons-servicios"></i> Biblioteca</h4>
+						<h4 class="titulos-servicios"><i class="fas fa-book icons-servicios"></i> Biblioteca</h4>
 						<p class="texto-servicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sit laboriosam iure.</p>
 					</div>
 					<div class="col-12 col-md-6">						
-						<h4 class="titulo-servicios"><i class="fas fa-heart icons-servicios"></i> Enfermería</h4>
+						<h4 class="titulos-servicios"><i class="fas fa-heart icons-servicios"></i> Enfermería</h4>
 						<p class="texto-servicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eum non voluptates, consequuntur nam.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12 col-md-6">					
-						<h4 class="titulo-servicios"><i class="fas fa-project-diagram icons-servicios"></i> Salón multiusos</h4>
+						<h4 class="titulos-servicios"><i class="fas fa-project-diagram icons-servicios"></i> Salón multiusos</h4>
 						<p class="texto-servicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sit laboriosam iure.</p>
 					</div>
 					<div class="col-12 col-md-6">						
-						<h4 class="titulo-servicios"><i class="fas fa-basketball-ball icons-servicios"></i> Canchas deportivas</h4>
+						<h4 class="titulos-servicios"><i class="fas fa-basketball-ball icons-servicios"></i> Canchas deportivas</h4>
 						<p class="texto-servicio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eum non voluptates, consequuntur nam.</p>
 					</div>
 				</div>
@@ -127,22 +145,22 @@
 <!-- SEPARADOR CON IMAGEN PARALLAX Y PROFESORES, MIEMBROS, CURSOS -->
 	<div class="img-para-inicio parallax">
 		<div class="row justify-content-around" style="margin: 0">
-			<div class="col-3 contenedor" style="background: #8AC2D1; margin-top: 50px; opacity: 0.85; z-index: 1">
-				<div style="z-index: 2">
+			<div class="col-3 contenedor" style="background: #0561A7; margin-top: 50px;">
+				<div>
 					<i class="fas fa-user-tie fa-3x" style="margin-left: 40%; margin-top: 40px; color: #EAEAEA; margin-bottom: 10px"></i>
 					<p class="text-center" style="font-size: 27px; color: white">Profesores</p>
-					<p class="text-center" style="font-size: 27px; color: white; margin-bottom: 50px">10</p>
+					<p class="text-center" style=" margin-bottom: 50px"><span id="profesores" style="font-size: 30px; color: white;">0</span></p>
 				</div>
 			</div>
-			<div class="col-3" style="background: #8AC2D1; margin-top: 50px; opacity: 0.85">
+			<div class="col-3" style="background: #0561A7; margin-top: 50px;">
 				<i class="fas fa-users fa-3x" style="margin-left: 40%; margin-top: 40px; color: #EAEAEA; margin-bottom: 10px"></i>
-				<p class="text-center" style="font-size: 27px; color: white">Organigrama</p>
-				<p class="text-center" style="font-size: 27px; color: white; margin-bottom: 50px">50</p>
+				<p class="text-center" style="font-size: 27px; color: white">Personal de Apoyo Educativo</p>
+				<p class="text-center" style="font-size: 27px; color: white; margin-bottom: 50px"><span id="pae">0</span></p>
 			</div>
-			<div class="col-3" style="background: #8AC2D1; margin-top: 50px; opacity: 0.9">
+			<div class="col-3" style="background: #0561A7; margin-top: 50px;">
 				<i class="far fa-edit fa-3x" style="margin-left: 40%; margin-top: 40px; color: #EAEAEA; margin-bottom: 10px"></i>
 				<p class="text-center" style="font-size: 27px; color: white">Cursos</p>
-				<p class="text-center" style="font-size: 27px; color: white; margin-bottom: 50px">35</p>
+				<p class="text-center" style="font-size: 27px; color: white; margin-bottom: 50px"><span id="cursos">0</span></p>
 			</div>
 		</div>
 	</div>
@@ -151,41 +169,41 @@
 <div class="container-fluid" style="background: #f5f5f5">
 	<div class="row justify-content-center" style="margin: 0">
 		<div>
-			<h2 class="text-center" style="margin-bottom: 50px; margin-top: 50px; font-family: 'Roboto', sans-serif; font-weight: bold;">Talleres impartidos para nuestros estudiantes</h2>
+			<h2 class="text-center" style="margin-bottom: 50px; margin-top: 70px; font-family: 'Roboto', sans-serif; color: #3A5795;"><strong>Talleres impartidos para nuestros estudiantes</strong></h2>
 		</div>
 	</div>
 	<div class="row justify-content-around">
 		<div class="col-3">
 			<i class="fas fa-music fa-3x iconos-talleres" style="padding: 20px"></i>
 			<h4 class="text-center titulos-talleres">Música</h4>
-			<p class="texto-talleres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
+			<p class="texto-talleres text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
 		</div>
 		<div class="col-3">
 			<i class="fab fa-slideshare fa-3x iconos-talleres" style="padding: 23px"></i>
 			<h4 class="text-center titulos-talleres">Teatro</h4>
-			<p class="texto-talleres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
+			<p class="texto-talleres text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
 		</div>
 		<div class="col-3">
 			<i class="fas fa-child fa-3x iconos-talleres" style="padding: 29px"></i>
 			<h4 class="text-center titulos-talleres">Danza</h4>
-			<p class="texto-talleres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
+			<p class="texto-talleres text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
 		</div>
 	</div>
 	<div class="row justify-content-around">
 		<div class="col-3">
 			<i class="fas fa-divide fa-3x iconos-talleres" style="padding: 26px"></i>
-			<h4 class="text-center titulos-talleres">Matematicas</h4>
-			<p class="texto-talleres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
+			<h4 class="text-center titulos-talleres">Matemáticas</h4>
+			<p class="texto-talleres text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
 		</div>
 		<div class="col-3">
 			<i class="fas fa-futbol fa-3x iconos-talleres" style="padding: 23px"></i>
-			<h4 class="text-center titulos-talleres">Futbol</h4>
-			<p class="texto-talleres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
+			<h4 class="text-center titulos-talleres">Fútbol</h4>
+			<p class="texto-talleres text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
 		</div>
 		<div class="col-3">
 			<i class="fas fa-book fa-3x iconos-talleres" style="padding: 25px"></i>
 			<h4 class="text-center titulos-talleres">Club de tareas</h4>
-			<p class="texto-talleres">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
+			<p class="texto-talleres text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque animi, nihil hic accusantium ab error amet voluptatum.</p>
 		</div>
 	</div>
 </div>
@@ -194,7 +212,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-12">
-			<h2 class="text-center" style="margin-top: 30px; margin-bottom: 30px; font-family: 'Roboto', sans-serif">Nuestras instalaciones</h2>
+			<h2 class="text-center" style="margin-top: 70px; margin-bottom: 70px; font-family: 'Roboto', sans-serif; color: #3A5795;"><strong>Nuestras instalaciones</strong></h2>
 		</div>
 		<div class="col-12" style="margin-bottom: 40px">
 		  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -273,7 +291,7 @@
 								<i class="fas fa-map-marker-alt fa-2x" style="color: #F2F2F2"></i>
 							</div>
 							<div style="display: inline-block; width: 70%; vertical-align: top;">
-								<p style="color: #F2F2F2; font-size: 15px">Av. Valsequillo No. 1234 Col. Arboledas C.P. 71010 Puebla, Puebla</p>
+								<p style="color: #F2F2F2; font-size: 15px">Blvd. Valsequillo No. 8358, frente a Barrios de Arboledas, C.P. 72590, Puebla, Pue.</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-6" style="margin-top: 30px; margin-bottom: 30px">
@@ -291,7 +309,7 @@
 								<i class="fas fa-phone-square fa-2x" style="color: #F2F2F2"></i>
 							</div>
 							<div style="display: inline-block; width: 70%">
-								<p style="color: #F2F2F2; font-size: 15px">222-123-1234</p>
+								<p style="color: #F2F2F2; font-size: 15px">(222)9-44-55-60</p>
 							</div>
 						</div>
 						<div class="col-12 col-md-6" style="margin-bottom: 30px">
@@ -354,7 +372,7 @@
 	</footer>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>

@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>NOSOTROS - RedWood College</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
@@ -25,35 +28,46 @@
 		</div>
 	</div>
 
+<!--MENU RESPONSIVOS-->
+	<div class="menu-responsivo">
+		<div>
+			<a href="index.html"><img id="logo-responsivo" src="img/logo.png" alt="LOGO"></a>
+			<button class="hamburger hamburger--spin-r" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>  
+		</div>
+	</div>
+
 <!-- MENU DE NAVEGACION -->
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#">nosotros</a></li>
-				<li><a href="#">instalaciones</a></li>
-				<li><a href="#">ubicación</a></li>
+				<li><a class="menu" href="nosotros.html">nosotros</a></li>
+				<li><a class="menu" href="instalaciones.html">instalaciones</a></li>
+				<li><a class="menu" href="ubicacion.html">ubicación</a></li>
 			</ul>
-			<a href="#"><img id="logo" src="img/buap.png" alt="Logo RedWood College"></a>
+			<a href="index.html"><img id="logo" src="img/logo.png" alt="Logo RedWood College"></a>
 			<ul>
-				<li><a href="#">sistema</a></li>
-				<li><a href="#">comunidad</a></li>
-				<li><a href="#">contacto</a></li>
+				<li><a class="menu" href="sistema.html">sistema</a></li>
+				<li><a class="menu" href="comunidad.html">comunidad</a></li>
+				<li><a class="menu" href="contacto.html">contacto</a></li>
 			</ul>
 		</nav>
 	</header>
 
 <!-- PRIMER IMAGEN -->
-<div class="parallax" style="background-image: url(img/nos/img-1.jpg); height: 400px; margin-top: 250px;"></div>
+<div class="parallax" style="background-image: url(img/nos/img-1.jpg); height: 500px; margin-top: 250px;"></div>
 
 <!-- DESCRIPCION NOSOTROS -->
 <div class="container-fluid" style="background: #f5f5f5">
 	<div class="row justify-content-center">
 		<div class="col-12">
-			<h2 class="text-center" style="font-family: 'Roboto Slab', serif; margin-top: 40px;">¿Quienes somos y por qué elegirnos?</h2>
+			<h1 class="text-center" style="margin-top: 70px; margin-bottom: 50px; font-family: 'Roboto'; color: #3A5795;"><strong>¿Quiénes somos y por qué elegirnos?</strong></h1>
 		</div>
-		<div class="col-12 col-lg-10">
-			<p style="font-family: 'Roboto Slab', serif; margin-top: 20px; font-size: 15px; margin-bottom: 50px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a felis massa. Donec porttitor porta justo, at scelerisque leo posuere et. Curabitur a risus consequat orci dignissim venenatis ut mattis ipsum. Phasellus sit amet sapien vel velit bibendum sollicitudin eu convallis libero. Fusce hendrerit semper pulvinar. Quisque feugiat ac eros ut hendrerit. Integer finibus tellus ut mi egestas, at hendrerit ante convallis. Nunc velit purus, faucibus interdum risus ac, dictum imperdiet leo. Sed vestibulum massa sapien.
-			Pellentesque accumsan consequat libero, et varius enim efficitur ac. Etiam libero mi, maximus nec ex ac, placerat posuere leo. Mauris scelerisque erat lacus, ut porttitor diam vestibulum quis. Phasellus bibendum risus vel felis vulputate, aliquam gravida ipsum tempus. Nulla blandit dictum neque, nec pretium dui auctor ut. Nam eleifend nisl vitae semper cursus. Vivamus consequat porta tellus, eu pharetra est euismod vitae. Morbi vel tincidunt leo, quis aliquet velit. Aenean suscipit sagittis scelerisque. Etiam sit amet porttitor nisi, ac ultrices neque.</p>
+		<div class="col-12 col-lg-8">
+			<p style="font-family: 'Roboto Slab', serif; margin-top: 20px; font-size: 18px; margin-bottom: 50px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a felis massa. Donec porttitor porta justo, at scelerisque leo posuere et. Curabitur a risus consequat orci dignissim venenatis ut mattis ipsum. Phasellus sit amet sapien vel velit bibendum sollicitudin eu convallis libero. Fusce hendrerit semper pulvinar. Quisque feugiat ac eros ut hendrerit. Integer finibus tellus ut mi egestas, at hendrerit ante convallis. Nunc velit purus, faucibus interdum risus ac, dictum imperdiet leo. Sed vestibulum massa sapien.</p>
 		</div>
 <!-- TARJETAS ANIMADAS -->
 		<div class="row">
@@ -94,7 +108,7 @@
 <!-- PARTE DE SERVICIOS -->
 <div class="container-fluid">
 	<div>
-		<h2 class="text-center" style="margin-top: 50px; margin-bottom: 30px; font-family: 'Roboto',sans-serif;">Servicios</h2>
+		<h2 class="text-center color-principal" style="margin-top: 70px; margin-bottom: 50px; font-family: 'Roboto',sans-serif;"><strong>Servicios</strong></h2>
 	</div>
 	<div>
 		<div class="row justify-content-center" style="margin: 0">
@@ -141,7 +155,7 @@
 <div class="img-para-nosotros">
 		<div class="row justify-content-around" style="margin: 0">
 			<div class="col-12">
-				<h1 class="text-center" style="margin-top: 40px; font-family: 'Roboto',sans-serif; color: #1E5A95;">Horarios</h1>
+				<h1 class="text-center" style="margin-top: 40px; font-family: 'Roboto',sans-serif; color: #1E5A95;"><strong>Horarios</strong></h1>
 			</div>
 			<div class="col-3" style="background: #1E5A95; margin-top: 70px">
 				<h4 class="text-center" style="color: black; margin-top: 50px; margin-bottom: 30px; font-family: 'Roboto',sans-serif;">Clases Normales</h4>
@@ -164,7 +178,7 @@
 <!-- PARTE DE TALLERES -->
 <div class="container-fluid">
 	<div>
-		<h2 class="text-center" style="margin-top: 50px; margin-bottom: 30px; font-family: 'Roboto',sans-serif;">Talleres</h2>
+		<h2 class="text-center color-principal" style="margin-top: 70px; margin-bottom: 50px; font-family: 'Roboto',sans-serif;"><strong>Talleres</strong></h2>
 	</div>
 	<div>
 		<div class="row justify-content-center" style="margin: 0">
@@ -298,7 +312,7 @@
 		</div>
 	</footer>
 	
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>

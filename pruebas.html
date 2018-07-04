@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
@@ -27,57 +28,130 @@
 		</div>
 	</div>
 
-<!-- MENU DE NAVEGACION -->
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">nosotros</a></li>
-				<li><a href="#">instalaciones</a></li>
-				<li><a href="#">ubicación</a></li>
-			</ul>
-			<a href="#"><img id="logo" src="img/buap.png" alt="Logo RedWood College"></a>
-			<ul>
-				<li><a href="#">sistema</a></li>
-				<li><a href="#">comunidad</a></li>
-				<li><a href="#">contacto</a></li>
-			</ul>
-		</nav>
-	</header>
-
-<!-- Galeria de imagenes-->
-<div class="demo" id="container" style="margin-top: 300px;">
-	<ul>
-		<li>
-			<a href="#">
-				<img src="img/galeria-instalaciones/p1.jpg" title="imagen 1" alt="">
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<img src="img/galeria-instalaciones/p2.jpg" alt="">
-			</a>
-		</li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p3.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p4.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p5.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p6.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p7.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p8.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p9.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p10.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p11.jpg" alt=""></a></li>
-		<li><a href="#"><img src="img/galeria-instalaciones/p12.jpg" alt=""></a></li>
-	</ul>
-</div>
-
-<div class="container-fluid" style="margin-top: 1000px; height: 200px">
-	<div class="row">
+<!--MENU RESPONSIVOS-->
+	<div class="menu-responsivo">
 		<div>
-			<a href="#" class="boton1"><span>Boton</span></a>
+			<a href="index.html"><img id="logo-responsivo" src="img/logo.png" alt="LOGO"></a>
+			<button class="hamburger hamburger--spin-r" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+			</button>  
 		</div>
 	</div>
-</div>
 
+<!-- MENU DE NAVEGACION -->
+<header>
+		<nav>
+			<ul>
+				<li><a class="menu" href="nosotros.html">nosotros</a></li>
+				<li><a class="menu" href="instalaciones.html">instalaciones</a></li>
+				<li><a class="menu" href="ubicacion.html">ubicación</a></li>
+			</ul>
+			<a href="index.html"><img id="logo" src="img/logo.png" alt="Logo RedWood College"></a>
+			<ul>
+				<li><a class="menu" href="sistema.html">sistema</a></li>
+				<li><a class="menu" href="comunidad.html">comunidad</a></li>
+				<li><a class="menu" href="contacto.html">contacto</a></li>
+			</ul>
+		</nav>
+	</header>	
+
+<p style="margin-top: 500px">
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
+	</p>
+		<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellendus excepturi, consequatur illo rerum, non sint asperiores dolore sapiente, vitae blanditiis. Officiis at quaerat modi earum, fugiat magni impedit, aperiam.</span>
+		<span>Ipsum vel voluptatum cumque soluta culpa nostrum distinctio impedit, labore reiciendis id quaerat optio, illo quae sit nisi ducimus quidem laudantium repellat odio saepe maiores corrupti iure totam nam! Omnis.</span>
+		<span>Molestias ex laborum, quia sunt amet nesciunt sit ducimus culpa tempore veritatis officia delectus dolore dignissimos reprehenderit vero, odit placeat est non molestiae ipsa nam velit in. Placeat, odio, qui.</span>
+	</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script type="text/javascript">
