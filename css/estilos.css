@@ -472,7 +472,16 @@ figure .trasera-tarjeta p{
 .ins-listas{
 	color: #0561A7;
 	font-family: 'Roboto Slab', serif;
-	font-size: 22px
+	font-size: 17px
+}
+.contamos-con{
+	background-color: #E0E0E0;
+	color: #0561A7;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	border-radius: 25px;
+	margin-left: 30%;
+	padding: 15px
 }
 
 /*-----------------MEDIA QUERIES-----------------*/
@@ -534,7 +543,7 @@ figure .trasera-tarjeta p{
 		margin-left: 20px;
 	}
 	.links-algomas{
-		margin-left: 30%;
+		margin-left: 15%;
 	}
 	/*-----HASTA AQUI PAGINA INICIO ----*/
 	.img-comunidad{
@@ -565,7 +574,7 @@ figure .trasera-tarjeta p{
 		margin-left: 44%;
 	}
 	.ins-listas{
-		margin-left: 20%;
+		margin-left: 10%;
 		margin-top: 5%;
 	}
 
@@ -581,6 +590,10 @@ figure .trasera-tarjeta p{
 	}
 	.lista-sistemas{
 		margin-left: 10%;
+	}
+	.contamos-con{
+		margin-left: 0%;
+		padding: 3px;
 	}
 }
 
@@ -603,7 +616,7 @@ figure .trasera-tarjeta p{
 	}
 	/*-----HASTA AQUI PAGINA COMUNIDAD ----*/
 	.ins-listas{
-		margin-left: 25%;
+		margin-left: 15%;
 		margin-top: 5%;
 	}
 }
@@ -632,7 +645,7 @@ figure .trasera-tarjeta p{
 		margin-left: 45%;
 	}
 	.ins-listas{
-		margin-left: 28%;
+		margin-left: 15%;
 		margin-top: 5%;
 	}
 	.links-algomas{
@@ -684,7 +697,10 @@ figure .trasera-tarjeta p{
 		margin-left: 40%;
 	}
 	.links-algomas{
-		margin-left: 43%;
+		margin-left: 38%;
+	}
+	.contamos-con{
+		margin-left: 20%;
 	}
 }
 
@@ -765,6 +781,9 @@ figure .trasera-tarjeta p{
 	}
 	.iconos-EOC{
 		margin-left: 41%;
+	}
+	.t-PC{
+		margin-left: 10%;
 	}
 	.i-PAE{
 		margin-left: 38%;

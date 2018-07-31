@@ -142,9 +142,9 @@ var resumenEscuela = jQuery('.resumen-escuela');
 if(resumenEscuela.length > 0){
 	$('.resumen-escuela').waypoint(function(){
 		/*SCRIPTS PARA ANIMAR NUMEROS*/
-		$('#profesores').animateNumber({number: 20}, 4000);
-		$('#pae').animateNumber({number: 50}, 4000);
-		$('#cursos').animateNumber({number: 35}, 4000);
+		$('#instalaciones').animateNumber({number: 20}, 4000);
+		$('#pae').animateNumber({number: 13}, 4000);
+		$('#cursos').animateNumber({number: 18}, 4000);
 	},{
 		offset: '55%'
 	});
